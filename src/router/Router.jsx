@@ -168,7 +168,7 @@ const Router = createBrowserRouter([
                 path: "edit-event/:id",
                 loader: ({ params }) =>
                     fetch(
-                        `https://dream-craft-server.vercel.app/event/${params.id}`
+                         `https://dream-craft-server.vercel.app/event/${params.id}`
                     ),
                 element: (
                     <PrivateRoute>
@@ -268,7 +268,7 @@ const Router = createBrowserRouter([
                 path: "edit-user/:id",
                 loader: ({ params }) =>
                     fetch(
-                        `https://dream-craft-server.vercel.app/user/${params.id}`,
+                         `https://dream-craft-server.vercel.app/user/${params.id}`,
                         { method: "POST" }
                     ),
                 element: (
